@@ -1,0 +1,152 @@
+/* Student Management CSS */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('images/stu.jpg');
+  background-size: cover;
+  background-position: center;
+  
+}
+
+h1, h2 {
+  text-align: center;
+  color: #eaf6f6; 
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  animation: fadeIn 1s;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+form {
+  width: 35%;
+  margin: 0 auto;
+  background-color: rgba(262, 260, 268, 0.150);
+  padding: 20px;
+ 
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+  animation: slideInFromBottom 1s;
+}
+
+input[type="text"], select {
+  width: 85%;
+  padding: 10px;
+  margin-bottom: 15px;
+  
+  border-radius: 3px;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+    border: 2px solid #f771f7;
+    border-radius: 9px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-left: 18px;
+    resize: vertical;
+    color: #000000;
+    background-color:  rgba(248, 252, 248, 0.103);
+}
+
+input[type="text"]:focus, select:focus {
+  box-shadow: 0px 0px 5px rgba(0, 127, 255, 0.5);
+}
+
+input[type="submit"] {
+  background-color: rgba(248, 252, 248, 0.103);
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  background-color:  rgba(248, 252, 248, 0.103);
+  border-radius: 9px;
+}
+
+
+
+ input[type=text]
+  {
+    width: 85%;
+    padding: 12px;
+    border: 2px solid #f771f7;
+    border-radius: 9px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    margin-left: 18px;
+    resize: vertical;
+    background-color:  rgba(248, 252, 248, 0.103);
+  }
+
+input[type="submit"]:hover {
+  background-color:#680747; 
+}
+
+.button{
+  text-align: center;
+  margin-top: 20px;
+}
+
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+button[type="submit"] {
+  background-color:rgba(248, 252, 248, 0.103);
+  color:#fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+  margin-top: 1px;
+  width: 40%;
+  position :center;
+  border-radius: 9px;
+}
+
+button[type="submit"]:hover {
+  background-color:#680747; 
+}
+
+#datepicker {
+  position: 80px;
+}
+
+.ui-datepicker {
+  width: 11000px;
+  position: absolute;
+  z-index: 98599;
+  
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

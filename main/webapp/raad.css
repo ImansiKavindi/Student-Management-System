@@ -1,0 +1,124 @@
+/* Student Management CSS */
+
+body {font-family: 'Roboto', sans-serif;
+    background-image: url('images/stu.jpg');
+    background-size: cover;
+
+  }
+h1, h2 {
+  text-align: center;
+  color: #eaf6f6;
+  margin-top: 20px;
+}
+
+h1 {
+  font-size: 36px;
+  animation: fadeIn 1s;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+table {
+  width: 80%;
+  margin: 0 auto;
+  background-color:#fafafa; 
+  padding: 8px;
+  
+  box-shadow: 0px 0px 10px ;
+  animation: slideInFromBottom 1s;
+}
+ td {
+  padding: 8px;
+ 
+  border-radius: 0px;
+  font-size: 15px;
+  color: #060608;
+  transition: all 0.3s ease-in-out;
+}
+
+
+
+td:hover {
+  background-color:#dcd6f7;
+}
+
+.table-header th {
+  /* Other header styles... */
+  background-color: #efd8f4; ;/* Blue background */
+  color: #060608;/* White text color for contrast */
+padding: 5px;
+}
+
+.edit-input {
+  display: none;
+  width: 70%;
+  padding: 5px;
+  margin-bottom: 5px;
+  border: 1px solid  #424874;
+  border-radius: 3px;
+  font-size: 16px;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+}
+
+.edit-input:focus {
+  box-shadow: 0px 0px 5px rgba(0, 127, 255, 0.5);
+}
+
+button {
+  background-color:#cca8e9;
+  color:#060608;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+
+  
+  
+  
+}
+
+button:hover {
+  background-color: rgb(138, 24, 141);
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(138, 24, 141);
+}
+
+input[type="submit"]{
+	
+	background-color:#cca8e9;
+  color:#060608;
+  border: none;
+  padding: 6px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.3s ease-in-out;
+
+  
+	
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
